@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da LAURETE</title>
+    <link rel="stylesheet" href="style.css">
+
+        <style>
+            body {
+            background-color: cadetblue;
+        }
+        
+        h1 {
+            color:rgb(209, 23, 23); 
+        }
+        
+        h3 {
+            color:  bisque;
+            font-size: 40px;
+        }
+        
+        .nomeVisitante{
+            color: blanchedalmond;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        }
+        
+        .botao{
+            height: 30px;
+            width: 200px;
+            background-color: blueviolet;
+            color: aquamarine;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .botao:hover{
+            background-color: rgb(5, 46, 48);
+            color: black;
+        }</style>
+</head>
+<body>
+    <center>
+    <h1>bem vindo ao meu site</h1>
+    <h3>Este site é sobre o SENAI</h3>
+    <p>Bem vindo</p>
+    <p id="visitante" class= "nomeVisitnte">Aguarde ...</p>
+
+   
+    <a href="https://www.sp.senai.br/"> <img src="logo-senai-cor-1.jpg" alt=""></a>
+    <br>
+    <a href="https://www.sp.senai.br/">Entre no link</a>
+
+    <h3>Cadastro</h3>
+    <label >Nome</label>
+    <br>
+    <input type="text">
+    <br>
+    <label >Sobrenome</label>
+    <br>
+    <input type="text">
+    <br>
+    <button onclick="enviar()"class= "botao">Enviar</button>
+    <script>
+        function enviar () {
+        alert("Cadastro feito com sucesso!")
+    }
+    //VARIÁVEL PARA PEGAR O NOME DO VISITANTE
+    var usuario = prompt ("Digite o seu nome")
+    
+    //PEGAR O VALOR DA VARIÁVEL E IMPRIMIR NA TELA
+    document.getElementById('visitante').innerHTML = usuario</script>
+</center>
+</body>
+</html>
